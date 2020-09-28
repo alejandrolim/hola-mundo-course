@@ -1,0 +1,16 @@
+title: hola mundo
+description: primer proyecto con andriod
+template:
+  repo: hola-mundo-template
+  name: hola-mundo
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
